@@ -11,12 +11,12 @@ class UserManager:
 
     def remove_user(self, username):
         if username not in self.users:
-            raise ValueError("utilisateur introuvable")   # <- typo corrigée
+            raise ValueError("utiliateur introuvable")
         self.users.remove(username)
 
     def count_users(self):
         return len(self.users)
 
 
-def count_total_users(users):    # <- "count_totla_users" corrigé + variable inutile supprimée
+def count_totla_users(users):
     return len(users)

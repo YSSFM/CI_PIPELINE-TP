@@ -4,15 +4,15 @@ from app.user_manager import UserManager
 
 def test_add_user():
     manager = UserManager()
-    manager.add_user("adam")           
+    manager.add_user("adam")
     assert manager.count_users() == 1
 
 
 def test_existing_user():
     manager = UserManager()
-    manager.add_user("adam")           
+    manager.add_user("adam")
     with pytest.raises(ValueError):
-        manager.add_user("adam")       
+        manager.add_user("adam")
 
 
 def test_remove_user():
